@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TLH Supermarket Produce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="images/logo4.png" alt="TLH Supermarket" role="link" style="width:200px;">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class = "navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="products_produce.html" class="nav-link" role="link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">Best Sellers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">Directions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="link">Contact Us</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-3 col-md-2">
+                
+                <div class="sidebar"><center>
+                <h3>Categories</h3>
+                <a href="products_produce.html">
+                    Produce
+                </a>
+                <br><a href="products_meats.html">
+                    Meats
+                </a>
+                <br><a href="products_seafood.html">
+                    Seafood
+                </a>
+                <br><a href="products_rice.html">
+                    Rice
+                </a><br><br>
+                </center></div>
+            </div>
+            
+            <div class="col-sm-9 col-md-6">
+                <center><h1>Our FRESH Produce</h1></center>
+                <p>    Quisque blandit dapibus tellus non suscipit. Curabitur in sodales massa, vel aliquam ipsum. Sed condimentum accumsan fringilla. Suspendisse quam odio, porttitor in semper in, rhoncus in turpis. Curabitur non augue luctus, sollicitudin augue a, ornare nibh. Vivamus sit amet nibh et dui interdum ultricies. Vestibulum a nunc metus. Donec at arcu commodo, dictum leo vel, pulvinar sapien. Nunc turpis velit, maximus in congue sit amet, convallis ac sem. Maecenas at efficitur magna. Vestibulum euismod augue enim, at euismod neque laoreet ut. Suspendisse aliquet, leo quis venenatis pretium, quam lectus facilisis urna, id varius orci ipsum sed massa. Nunc commodo nunc varius euismod molestie.</p>
+            </div>
+            
+            <div class="col-md-4">
+                <img class="productImg center" src="images\products\produce\produce.jpg"/>
+            </div>
+        </div>
+    
+        <script id="itemList" type="x-tmpl-mustache">
+            <div class="row">
+                {{#item}}
+                    <div class="items1 col-sm-6 col-md-3 form-group"><center>
+                        <br>{{name}}<br><br>
+                        <img src="{{img}}"/>
+                        <br><br>
+                    </div>
+                {{/item}}
+            </div>
+
+        </script>
+
+        <div id="target"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

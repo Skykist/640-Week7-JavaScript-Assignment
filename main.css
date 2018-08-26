@@ -1,0 +1,107 @@
+.primary1 {
+  background-color: #A1CDA8;
+}
+.primary2 {
+  background-color: #8cfc6a;
+}
+.primary3 {
+  background-color: #ffda75;
+}
+.round-borders {
+  border-radius: 5px;
+}
+body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 16px;
+}
+button {
+  background-color: #f6ff73;
+  border-radius: 5px;
+  padding: 10px;
+  color: #224880;
+}
+.inputLabel {
+  font-size: 14px;
+  font-weight: bold;
+}
+input.inputField {
+  padding: 5px;
+  border: 1px solid orange;
+}
+.navbar {
+  background-color: #ffda75;
+}
+.navbar li {
+  font-size: 24px;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.navbar li a:hover {
+  text-decoration: underline;
+}
+.container .sidebar {
+  border: 2px solid #8cfc6a;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #A1CDA8;
+}
+.container .sidebar h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.container .sidebar a {
+  font-size: 18px;
+}
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container .productImg {
+  height: 200px;
+}
+.container .row {
+  margin: 25px;
+}
+.container .items1 {
+  background-color: #A1CDA8;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  width: 100%;
+}
+.container .items2 {
+  background-color: #ffda75;
+  border-radius: 5px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .deviceWidth {
+    width: 280px;
+    padding: 0;
+  }
+  .center {
+    text-align: center;
+  }
+  img {
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+  }
+  .navbar li {
+    font-size: 16px;
+  }
+}
